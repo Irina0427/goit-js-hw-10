@@ -16,3 +16,121 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+/* timer */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.picker-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 24px;
+}
+
+#datetime-picker {
+  padding: 10px 14px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  min-width: 260px;
+}
+
+[data-start] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+[data-start]:hover:not(:disabled) {
+  background: #6c8cff;
+}
+
+[data-start]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 86px;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.label {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 0.06em;
+}
+
+/* Snackbar */
+
+.form {
+  max-width: 360px;
+  margin: 24px;
+  padding: 24px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  display: grid;
+  gap: 16px;
+}
+
+.form label {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+  color: #2e2f42;
+}
+
+.form input[type="number"] {
+  padding: 10px 14px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form fieldset {
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.form button[type="submit"] {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4e75ff;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.form button[type="submit"]:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
